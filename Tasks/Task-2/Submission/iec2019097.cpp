@@ -46,7 +46,7 @@ int main()
        
         for(int i=m;i<=n;i++){
             for(int j=m;j<=n;j++){
-                if((dp[i][j]-dp[i-m][j]-dp[i][j-m])>=k) flag=1;
+                if((dp[i][j]-dp[i-m][j]-dp[i][j-m])<=k) flag=1;
             }
         }
         if(flag){ s=m; break;}
